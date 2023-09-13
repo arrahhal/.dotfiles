@@ -1,0 +1,50 @@
+import:
+  - ~/.config/alacritty/themes/gruvbox-material-soft.yml
+
+window:
+  dimensions:
+    columns: 190
+    lines: 48
+  decorations: none
+  #opacity: 0.8
+  # padding:
+  #   x: 0
+  #   y: 0
+
+scrolling:
+  history: 10000
+
+  # Font configuration
+font:
+  normal:
+    family: Hack Nerd Font
+  bold:
+    family: Hack Nerd Font
+  italic:
+    family: Hack Nerd Font
+  bold_italic:
+    family: Hack Nerd Font
+  size: 14
+
+      # Key bindings
+key_bindings:
+  - { key: L,         mods: Control,                    action: ClearLogNotice }
+  - { key: Backslash, mods: Alt, action: SearchForward}
+  - { key: Backslash, mods: Alt|Shift, action: SearchBackward}
+  - { key: Y,         mods: Alt,                    action: Copy }
+  - { key: P,         mods: Alt,                    action: Paste }
+  - { key: Q,         mods: Alt,                    action: Quit }
+  - { key: Z,         mods: Alt,                    action: ToggleMaximized }
+  - { key: Plus,         mods: Alt,                    action: IncreaseFontSize }
+  - { key: Minus,         mods: Alt,                    action: DecreaseFontSize }
+  - { key: Equals,         mods: Alt,                    action: ResetFontSize }
+  - { key: U,         mods: Alt,                    action: ScrollPageUp }
+  - { key: U,         mods: Alt|Shift,                    action: ScrollLineUp }
+  - { key: D,         mods: Alt,                    action: ScrollHalfPageDown }
+  - { key: D,         mods: Alt|Shift,                    action: ScrollLineDown }
+  - { key: T,         mods: Alt,                    action: Hide }
+  - { key: Return, mods: Alt, action: ToggleViMode }
+  - { key: C,      mods: Alt,       action: ClearHistory            }
+  - { key: Tab,      mods: Alt,       action: Hide            }
+  - { key: S,      mods: Alt,       action: SpawnNewInstance            }
+
