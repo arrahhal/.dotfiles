@@ -32,6 +32,8 @@ require('lazy').setup({
     -- Detect tabstop and shiftwidth automatically
     'tpope/vim-sleuth',
 
+    'windwp/nvim-ts-autotag',
+
     {
         'windwp/nvim-autopairs',
         event = "InsertEnter",
@@ -440,6 +442,8 @@ local servers = {
         },
     },
 }
+
+require('nvim-ts-autotag').setup({})
 
 -- Setup neovim lua configuration
 require('neodev').setup()
