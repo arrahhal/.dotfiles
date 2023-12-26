@@ -1,18 +1,11 @@
-- clean: ['~']
+- clean: ['~', '~/.config']
 
 - link:
-    ~/.config/nvim:
-      create: true
-      path: nvim
-    ~/.config/tmux:
-      create: true
-      path: tmux
-    ~/.config/zsh:
-      create: true
-      path: zsh
-    ~/.config/aliases:
-      create: true
-      path: aliases
-    ~/.config/alacritty:
-      create: true
-      path: alacritty
+    ~/.zshenv: .zshenv
+    ~/.config/zsh: zsh
+    ~/.config/aliases: aliases
+    ~/.config/nvim: nvim
+    ~/.config/tmux: tmux
+    ~/.config/sway: sway
+    ~/.config/waybar: waybar
+    ~/.config/alacritty: alacritty

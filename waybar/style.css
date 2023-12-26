@@ -1,0 +1,74 @@
+/* Reset all styles */
+* {
+  border: none;
+  border-radius: 0;
+  min-height: 0;
+  margin: 0;
+  padding: 0;
+}
+
+#waybar {
+  background-color: #292828; /* Sway palette: unfocused/background */
+  color: #ffffff; /* Sway palette: focused/text */
+  font-family: system-ui, sans-serif;
+  font-size: 13px;
+}
+
+#battery,
+#clock,
+#mode,
+#language,
+#network {
+  margin-left: 12px;
+}
+
+#battery.warning {
+  color: orange;
+}
+
+#battery.critical {
+  color: red;
+}
+
+#clock {
+  margin-left: 12px;
+  margin-right: 12px;
+  min-width: 60px;
+}
+
+#network.disconnected {
+  color: orange;
+}
+
+#workspaces button {
+  margin-right: 10px;
+  border-top: 2px solid transparent;
+  padding-right: 4px;
+  padding-left: 4px;
+  color: #888888; /* Sway palette: unfocused/text */
+}
+
+#workspaces button:hover {
+  /* Reset all hover styles */
+  background: inherit;
+  box-shadow: inherit;
+  text-shadow: inherit;
+}
+
+#workspaces button.visible {
+  border-color: #333333; /* Sway palette focused_inactive/border */
+  color: #ffffff; /* Sway palette: focused_inactive/text */
+  background-color: #5f676a; /* Sway palette focused_inactive/background */
+}
+
+#workspaces button.focused {
+  border-color: #4c7899; /* Sway palette: focused/border */
+  color: #ffffff; /* Sway palette: focused/text */
+  background-color: #285577; /* Sway palette: focused/background */
+}
+
+#workspaces button.urgent {
+  border-color: #2f343a; /* Sway palette: urgent/border */
+  color: #ffffff; /* Sway palette: urgent/text */
+  background-color: #900000; /* Sway palette: urgent/background */
+}
