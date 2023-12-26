@@ -1,0 +1,18 @@
+- clean: ['~']
+
+- link:
+    ~/.config/nvim:
+      create: true
+      path: nvim
+    ~/.config/tmux:
+      create: true
+      path: tmux
+    ~/.config/zsh:
+      create: true
+      path: zsh
+    ~/.config/aliases:
+      create: true
+      path: aliases
+    ~/.config/alacritty:
+      create: true
+      path: alacritty
