@@ -9,3 +9,4 @@
     ~/.config/sway: sway
     ~/.config/waybar: waybar
     ~/.config/alacritty: alacritty
+    ~/.config/foot: foot
