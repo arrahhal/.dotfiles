@@ -17,18 +17,9 @@ done
 plug "zsh-users/zsh-autosuggestions"
 plug "zsh-users/zsh-syntax-highlighting"
 
-function zvm_config() {
-    # Disable the cursor style feature
-    ZVM_CURSOR_STYLE_ENABLED=false
-}
-plug "jeffreytse/zsh-vi-mode"
-
 export YSU_MESSAGE_POSITION="after"
 export YSU_IGNORED_ALIASES=("cd..")
 plug "MichaelAquilina/zsh-you-should-use"
-
-# keybinds
-bindkey '^ ' autosuggest-accept
 
 # Node Version Manager
 export NVM_DIR="$([ -z "${XDG_CONFIG_HOME-}" ] && printf %s "${HOME}/.nvm" || printf %s "${XDG_CONFIG_HOME}/nvm")"
